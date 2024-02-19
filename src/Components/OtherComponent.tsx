@@ -2,7 +2,7 @@ import React from "react";
 import { myStore } from "../stores/myStore";
 
 const OtherComponent: React.FC = () => {
-    const [initialSettings] = myStore.use("settings");
+    const initialSettings = myStore.get("settings");
 
   return (
     <div>

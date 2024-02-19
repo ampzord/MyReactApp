@@ -15,12 +15,8 @@ function App() {
       <header className="App-header">
         <nav>
           <ul>
-          { currentPage === 'OtherComponent' && (
             <li onClick={() => handleNavigate('MyComponent')}>MyComponent</li>
-          )}
-          { currentPage === 'MyComponent' && (
             <li onClick={() => handleNavigate('OtherComponent')}>OtherComponent</li>
-          )}
           </ul>
         </nav>
 

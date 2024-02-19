@@ -4,7 +4,7 @@ import SubComponent from "./SubComponent";
 
 const MyComponent: React.FC = () => {
 
-  const [initialSettings] = myStore.use("settings");
+  const initialSettings = myStore.get("settings");
 
   return (
     <div>

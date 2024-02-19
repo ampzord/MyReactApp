@@ -2,17 +2,16 @@ import React from "react";
 import { myStore } from "../stores/myStore";
 
 const SubComponent: React.FC = () => {
-    const [initialSettings, setInitialSettings] = myStore.use("settings");
     
     const updateSettings = (value: number) => {
-        // if (value === 1)
-        //     setInitialSettings({ ...initialSettings, type: 'INITIAL'});
-        // else
-        //     setInitialSettings({ ...initialSettings, type: 'HelloWorld'});
-        myStore.update({ settings.type: 'asdada'})
+        if (value === 1)
+            myStore.update({ settings: { ...myStore.get('settings'), type: 'INITIAL' } });
+        else
+            myStore.update({ settings: { ...myStore.get('settings'), type: 'HelloWorld' } });
     }
 
     console.log('myStore.getAll():', myStore.getAll());
+    console.log('myStore.useAll():', myStore.useAll());
     
 
   return (
