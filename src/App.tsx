@@ -4,16 +4,16 @@ import OtherComponent from './Components/OtherComponent';
 import { useState } from 'react';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState<'MyComponent' | 'OtherComponent' | null>('MyComponent');
+  // const [currentPage, setCurrentPage] = useState<'MyComponent' | 'OtherComponent' | null>('MyComponent');
 
-  const handleNavigate = (page: 'MyComponent' | 'OtherComponent') => {
-    setCurrentPage(page);
-  };
+  // const handleNavigate = (page: 'MyComponent' | 'OtherComponent') => {
+  //   setCurrentPage(page);
+  // };
 
   return (
     <div className="App">
-      <header className="App-header">
-        <nav>
+      {/* <header className="App-header"> */}
+        {/* <nav>
           <ul>
             <li onClick={() => handleNavigate('MyComponent')}>MyComponent</li>
             <li onClick={() => handleNavigate('OtherComponent')}>OtherComponent</li>
@@ -21,8 +21,11 @@ function App() {
         </nav>
 
         {currentPage === 'MyComponent' && <MyComponent />}
-        {currentPage === 'OtherComponent' && <OtherComponent />}
-      </header>
+        {currentPage === 'OtherComponent' && <OtherComponent />} */}
+        <MyComponent />
+        <OtherComponent />
+
+      {/* </header> */}
     </div>
   );
 }

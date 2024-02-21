@@ -1,5 +1,36 @@
+/* App.css */
+
 .App {
-  text-align: center;
+  display: flex;
+  height: 100vh;
+}
+
+.MyComponent,
+.OtherComponent {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MyComponent {
+  background-color: #3498db; /* Set your desired background color for MyComponent */
+}
+
+.OtherComponent {
+  background-color: #2ecc71; /* Set your desired background color for OtherComponent */
+}
+
+.SubComponent {
+  background-color: red; /* Set your desired background color for OtherComponent */
+  padding: 10px;
+}
+
+/* Optional: Add some styling to the components for better visibility */
+.MyComponent h1,
+.OtherComponent h1 {
+  color: white;
 }
 
 .App-logo {

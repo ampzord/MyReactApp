@@ -85,6 +85,8 @@ export const createGlobalStore = <State extends object>(initialState: State) => 
       }, true);
     },
 
+    // addNewValue()
+
     /** Retrieves the current `key` value. Does _not_ listen on state changes (meaning no re-renders). */
     get<K extends keyof State>(key: K) {
       return store.getState()[key];

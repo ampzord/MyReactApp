@@ -7,8 +7,7 @@ const MyComponent: React.FC = () => {
   const initialSettings = myStore.get("settings");
 
   return (
-    <div>
-        {initialSettings.type}
+    <div className="MyComponent">
         <SubComponent />
     </div>
   );
